@@ -1,5 +1,5 @@
 <p align="center">
-<img src="vuvuzela.png" width="128" />
+<img src="vuvuzela.png" width="48" />
 boo.js
 </p>
  
