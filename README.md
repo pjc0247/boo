@@ -5,10 +5,7 @@ boo.js
  
 [Example](https://pjc0247.github.io/useService/)<br>
 
-Reactjs service injection just like angular's.
-
-__Made for replacement of state management library__<br>
-This 100~ lines of code can replace your blahblah
+A super tiny state management library that only contains 2 functions.
 
 Overview
 ----
