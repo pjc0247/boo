@@ -1,11 +1,17 @@
 <p align="center">
-<img src="vuvuzela.png" width="48" />
-boo.js
+<img src="vuvuzela.png" width="64" />
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="boojs.png" width="120" />
 </p>
  
 [Example](https://pjc0247.github.io/useService/)<br>
 
 A super tiny state management library that only contains 2 functions.
+
+Installation
+----
+```
+yarn add boo-state
+```
 
 Overview
 ----
@@ -47,10 +53,16 @@ const auth = useComponentService(AuthService);
 
 getService
 ----
+You can retrive other service's instances via `getService`.
 ```js
 class PostService {
   async write() {
     const auth = getService(AuthService);
+    
+    if (auth.isLoggedIn === false) {
+      alert('You must sign-in before you writing a post!');
+      return;
+    }
     /* ... */
   }
 }
