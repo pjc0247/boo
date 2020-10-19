@@ -1,6 +1,6 @@
 {
-  "name": "boo",
-  "version": "1.0.0",
+  "name": "boo-state",
+  "version": "1.0.3",
   "description": "Yet another react state management library",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/pjc0247/boo/issues"
   },
-  "homepage": "https://github.com/pjc0247/boo#readme"
+  "homepage": "https://github.com/pjc0247/boo#readme",
+  "dependencies": {
+    "react": ">=16.13.0"
+  }
 }
