@@ -53,10 +53,16 @@ const auth = useComponentService(AuthService);
 
 getService
 ----
+You can retrive other service's instances via `getService`.
 ```js
 class PostService {
   async write() {
     const auth = getService(AuthService);
+    
+    if (auth.isLoggedIn === false) {
+      alert('You must sign-in before you writing a post!');
+      return;
+    }
     /* ... */
   }
 }
