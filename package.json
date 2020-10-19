@@ -4,7 +4,7 @@
   "description": "Yet another react state management library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,19 @@
   },
   "homepage": "https://github.com/pjc0247/boo#readme",
   "dependencies": {
-    "react": ">=16.13.0"
+    "react": ">=16.13.0",
+    "react-dom": ">=16.13.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "babel-jest": "^26.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "jest": "^26.6.0",
+    "react-test-renderer": "^16.14.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
   }
 }

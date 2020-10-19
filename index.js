@@ -36,10 +36,9 @@ const createService = (service) => {
           currentSubscription.props[prop] = true;
       }
       const value = target[prop];
-      if (typeof value === 'function') {
-        if (internalMethods[prop]) {
-          return internalMethods[prop];
-        }
+      if (internalMethods[prop]) {
+        return internalMethods[prop];
+      } else if (typeof value === 'function') {
         return (...args) => {
           const subscription = currentSubscription;
           currentSubscription = { props: {} };
