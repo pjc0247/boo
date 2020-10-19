@@ -1,11 +1,17 @@
 <p align="center">
-<img src="vuvuzela.png" width="48" />
-boo.js
+<img src="vuvuzela.png" width="64" />
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="boojs.png" width="120" />
 </p>
  
 [Example](https://pjc0247.github.io/useService/)<br>
 
 A super tiny state management library that only contains 2 functions.
+
+Installation
+----
+```
+yarn add boo-state
+```
 
 Overview
 ----
