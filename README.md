@@ -4,6 +4,7 @@
 </p>
  
 [Example](https://pjc0247.github.io/useService/)<br>
+[Example Sourcecode](https://github.com/pjc0247/useService/blob/master/index.html#L14-L23)<br>
 
 A super tiny state management library that only contains 2 functions.
 
