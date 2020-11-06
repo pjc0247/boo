@@ -40,3 +40,25 @@ const [p2, setP2] = useState(0);
 const user = useService(UserService);
 const [foo, refetch, hasValue] = useRemoteValue(() => user.getFoo(p1, p2), [p1, p2]);
 ```
+
+
+useApi
+----
+
+`useApi`는 비동기 api를 원하는 시점에 호출하고, 결과 혹은 에러를 저장합니다. <br>
+apollo의 useMutation과 비슷하게 동작합니다.
+
+```jsx
+const auth = useService(AuthService);
+const login = useApi(auth.login);
+
+const onClickLogin = (id, pw) => {
+  login(id, pw);
+};
+
+return (
+  { login.isFetching && "Please wait..." }
+  { login.loginResult && "You are successfully logged in" }
+  { login.error && "Login failed" }
+);
+```
