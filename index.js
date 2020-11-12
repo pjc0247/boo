@@ -139,6 +139,7 @@ export const useService = (service, name) => {
 
   React.useEffect(() => {
     s.__subscribers.unshift(subscription.current);
+    return () => s.__subscribers = s.__subscribers.filter(x => x !== subscription.current);
   }, [s]);
   React.useEffect(() => {
     currentSubscription = null;
