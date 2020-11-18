@@ -50,14 +50,6 @@ const AuthComponent = () => {
 };
 ```
 
-useComponentService
-----
-use `useComponentService` in case that you want to control more than one instances.
-```js
-// Get or create per-component service instance.
-const auth = useComponentService(AuthService);
-```
-
 getService
 ----
 You can retrive other service's instances via `getService`.
