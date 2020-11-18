@@ -4,6 +4,10 @@ class UserService {
   token: string;
   user: any; // 데모앱이라 실제 User 정의는 없음
 
+  get isLoggedIn() {
+    return !!this.token;
+  }
+  
   async login(id, password) {
     const {
       user,
