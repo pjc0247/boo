@@ -22,6 +22,8 @@ class UserService {
 ```jsx
 const user = useService(UserService);
 const [me, refetch, hasValue] = useRemoteValue(user.getMe);
+// getMe는 즉시 실행됩니다.
+// 다만, 서버 호출이기 때문에 일정 시간동안 me는 null값일 수 있습니다.
 ```
 
 
