@@ -12,6 +12,7 @@ boo is
 ----
 * Pure Javascript workflow, you don't need to learn library-specific flows. (such as `dispatch` and `reducer`)
 * Everything works as expected.  (No hidden layers, No middlewares)
+* Less re-render compared to `redux`.
 
 Installation
 ----
