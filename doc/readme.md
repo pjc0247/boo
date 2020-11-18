@@ -45,7 +45,7 @@ const [foo, refetch, hasValue] = useRemoteValue(() => user.getFoo(p1, p2), [p1, 
 ```
 
 
-useApi
+useApi (수정예정)
 ----
 
 `useApi`는 비동기 api를 원하는 시점에 호출하고, 결과 혹은 에러를 저장합니다. <br>
