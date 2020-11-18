@@ -11,7 +11,7 @@ A super tiny state management library that only contains 2 functions.
 boo is
 ----
 * Pure Javascript workflow, you don't need to learn library-specific flows. (such as `dispatch` and `reducer`)
-* Just works as you think(and also write).
+* Everything works as you expect.  (No hidden layers)
 
 Installation
 ----
