@@ -1,7 +1,7 @@
 const App({
 }) => {
   const userService = useService(UserService);
-  const [profile] = useRemoteValue(userService.getMe, [userService.isLoggedIn]);
+  const [profile] = useRemoteValue(userService.getProfile, [userService.isLoggedIn]);
   
   return (
     <>
