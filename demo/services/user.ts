@@ -21,3 +21,4 @@ class UserService {
     return api.get('/me');
   }
 }
+export default UserService;
